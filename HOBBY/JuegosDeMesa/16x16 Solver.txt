@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main {
+    static char[][] sudoku=new char[16][16];
+    public static void main(String[] args) throws Exception {
+        for(int i=0;i<16;i++){
+            for(int j=0;j<16;j++){
+                sudoku[i][j]='0';
+            }
+        }
+        
+        printS();
+        
+    }
+    static public void printS(){
+        for(int i=0;i<16;i++){
+            for(int j=0;j<16;j++){
+                System.out.print(sudoku[i][j]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+}
